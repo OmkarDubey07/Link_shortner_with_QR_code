@@ -1,7 +1,7 @@
 const userInput = document.querySelector(".linkInput");
 const createBtn = document.querySelector(".createBtn");
 const showResult = document.querySelector(".resultLink p");
-const copyBtn = document.querySelector(".copyBtn img");
+const copyBtn = document.querySelector(".copyBtn");
 
 createBtn.addEventListener("click", async () => {
   const originalURL = userInput.value;
@@ -31,4 +31,20 @@ createBtn.addEventListener("click", async () => {
     console.error("An error occurred:", error);
     showResult.textContent = "Failed to shorten URL. Please try again.";
   }
+});
+
+// copy that short link
+console.log(showResult);
+copyBtn.addEventListener("click", () => {
+  const textToCopy = showResult.textContent;
+
+  let textArea = document.createElement("textarea");
+  textArea.value = textToCopy;
+  document.body.appendChild(textArea);
+  textArea.select();
+  document.execCommand("copy");
+
+  document.body.removeChild(textArea);
+  alert("URL copied to clipboard!");
+  // console.log(textToCopy)
 });
