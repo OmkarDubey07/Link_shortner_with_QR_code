@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family: "Caveat", cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.container{
+    width: 600px;
+    max-width: 600px;
+    /* height: 300px; */
+    /* border: #828282 1px solid; */
+}
+.linkSection{
+    border: 2px solid #828282;
+    border-radius: 30px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.linkSection h1{
+    font-size: 2.5rem;
+}
+.linkSection p.headline{
+    font-size: 1.5rem;
+}
+.linkSection .urlSection{
+    margin-top: 10px;
+    width: 100% ;
+}
+.urlSection input{
+    padding: 10px 15px;
+    width: 300px;
+    outline: none;
+    border: #828282 2px solid;
+    border-radius: 10px;
+}
+.urlSection input::placeholder{
+    font-size: 20px;
+    font-family: "Caveat", cursive;
+}
+.linkSection .createBtn{
+    margin-top: 10px;
+    border: none;
+    background-color: cornflowerblue;
+    font-size: medium;
+    padding: 10px 20px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 5px;
+}
+.results{
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.resultLink{
+    width: 60%;
+    padding: 5px 10px;
+    text-align: left;
+    height: 30px;
+    background-color: rgb(155, 255, 155);
+    border-radius: 5px;
+}
+.resultLink p{
+    font-size: large;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.results .copyBtn{
+    padding: 10px 15px ;
+    background-color: rgb(155, 255, 155);
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    color: rgb(119, 118, 118);
+    font-size: 16px;
+} 
+.qrSection{
+    opacity: 0;
+    margin-top: 1rem;
+    border: #828282 2px solid;
+    display: flex;
+    padding: 16px 0;
+    align-items: center;
+    pointer-events: none;
+    justify-content: center;
+    border-radius: 1.5rem;
+}
+.qrSection img{
+    width: 10rem;
+}
