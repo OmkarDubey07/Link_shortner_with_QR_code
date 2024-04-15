@@ -64,7 +64,7 @@ body{
     align-items: center;
 }
 .resultLink{
-    width: 60%;
+    width: 70%;
     padding: 5px 10px;
     text-align: left;
     height: 30px;
@@ -95,6 +95,11 @@ body{
     justify-content: center;
     border-radius: 1.5rem;
 }
+.qrSection.active{opacity: 10;}
 .qrSection img{
     width: 10rem;
+    display: none;
+}
+.qrSection.active img{
+    display: block;
 }

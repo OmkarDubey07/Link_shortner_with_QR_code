@@ -5,3 +5,9 @@ Welcome to our project - a link shortener with an integrated QR code generator! 
 - Shortens long links for easier sharing.
 - Copies the shortened link to your clipboard with a single click.
 - Generates a QR code for the link.
+
+### Technologies Used
+- HTML
+- CSS
+- JavaScript
+
